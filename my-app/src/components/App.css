@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18,75px;
+  color: #000000;
+  background-color: #FFC0CB;
+  
+}
+
+.finished{
+  text-decoration: line-through;
+}
+li{
+  list-style: none;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  background-color: #A52A2A;
+  color: white;
+}
+
+.header-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  color: white;
+}
+
+.header-link:hover{
+  color: #61dafb;
+}
+
+.header-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  color: white;
+}
+
+.header-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+
+.header-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  color: white;
+}
+
+.animate-button {
+  background-color: 	#808000;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: animateButton 1s linear;
+}
+
+@keyframes animateButton {
+  0% {
+    rotate: scale(1);
+  }
+  50% {
+    rotate: scale(1.2);
+  }
+  100% {
+    rotate: scale(1);
+  }
+}
+
+.animate-button:active {
+  animation: none;
+  transform: translateY(3px);
+}
+
+
+.validate-err{
+  border: 5px red solid
+}
